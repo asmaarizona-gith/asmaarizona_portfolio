@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - ASMA ARIZONA DESIGNS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+.contact-section {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 50px;
+  background: #f0f8ff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.contact-section h2 {
+  text-align: center;
+  color: #0A66C2;
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.contact-section p {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #0A66C2;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #0A66C2;
+  box-shadow: 0 0 8px rgba(10,102,194,0.3);
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #0A66C2;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #004e8c;
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 30px 20px;
+    margin: 40px 10px;
+  }
+}
+
+</style>
+<body>
+<header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="contact-section">
+  <h2>Contact Me</h2>
+  <p>📧 Email: asmaarizona@gmail.com</p>
+  <p>💬 Instagram: asma_arizona</p>
+  <p>💬 Tiktok:Asma Arizona</p>
+
+  <form action="https://getform.io/f/bwnyodja" method="POST" class="contact-form">
+    
+    <!-- Name -->
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    </div>
+    
+    <!-- Email -->
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+    
+    <!-- Phone -->
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+    </div>
+    
+    <!-- Message -->
+    <div class="form-group">
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+    </div>
+    
+    <!-- Submit -->
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
